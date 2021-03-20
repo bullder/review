@@ -1,40 +1,188 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>Continuous review</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	<style>
+		.cm-table-non td, .cm-table td{height: 100px}
+		.as-container{display: flex;}
+		.as-column{flex: 1;}
+		.ws-table img {max-width: 50px}
+		.as-container{display: flex;}
+		.as-column{flex: 1;}
+	</style>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+		<section>
+			<div class="as-container">
+				<div class="as-column"><img alt="splash" src="img/splash.png"></div>
+				<div class="as-column">
+					<h2>Continuous review</h2>
+				</div>
 			</div>
-		</div>
+		</section>
+		<section>
+			<p>Disadvantages of 1on1:</p>
+			<ul>
+				<li>Not formalized</li>
+				<li>Not measurable</li>
+				<li>Lack of visibility</li>
+				<li>Not clear how expectations matches between company and employee</li>
+				<li>Lack of feedback from manager</li>
+			</ul>
+		</section>
+		<section>
+			<p>Disadvantages of 360review:</p>
+			<ul>
+				<li>Lack of feedback</li>
+				<li>Hard to have suitable long term goals</li>
+				<li>Not transparent</li>
+				<li>Painful</li>
+			</ul>
+		</section>
+		<section>
+			<p>Every All Hands sessions <br /> we have complains <br /> about retaining talents</p>
+		</section>
+		<section>
+			<p>Idea of continuous review. Points</p>
+			<table class="framework-table">
+				<thead>
+				<tr>
+					<th>Points</th>
+					<th>Meaning</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr><td>0</td><td>Under expectation</td></tr>
+					<tr><td>1</td><td>Expected</td></tr>
+					<tr><td>2</td><td>Above expectation</td></tr>
+					<tr><td>+1</td><td>Manager can boost points</td></tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<p>Idea of continuous review. Matrix</p>
+			<p>Each 1on1 manager and employee matching their points <br /> for the the work performed past month</p>
+			<table class="framework-table">
+				<thead>
+				<tr>
+					<th colspan="2">Manager</th>
+					<th>0</th>
+					<th>1</th>
+					<th>2</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr><td rowspan="3" style="border: none">Employee</td>
+					<td>0</td><td>bad</td><td>+</td><td>+</td></tr>
+				<tr><td>1</td><td>-</td><td>Ok</td><td>+</td></tr>
+				<tr><td>2</td><td>-</td><td>-</td><td>?</td></tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<p>Idea of continuous review. Cases</p>
+			<table class="framework-table">
+				<thead>
+				<tr>
+					<th>Case</th>
+					<th>Meaning</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr><td>bad</td><td>Both knows that performance was bad</td></tr>
+				<tr><td>Ok</td><td>Expected performance</td></tr>
+				<tr><td>?</td><td>Why is it both excepted that</td></tr>
+				<tr><td>-</td><td>Lack of vision from employee about delivered value</td></tr>
+				<tr><td>+</td><td>Manager power to provide positive feedback</td></tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<p>Besides of that as sign of recognition <br /> manager can provide additional point +1</p>
+		</section>
+		<section>
+			<p>Idea of continuous review. Cycle</p>
+			<p>Each cycle we have review points for a cycle as <br /> [0..2]+[0..2]+[0..2]=[0..6+]</p>
+			<table class="framework-table" style="font-size: 60%">
+				<thead>
+				<tr>
+					<th>Points</th>
+					<th>Meaning</th>
+					<th>Benefit</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>0</td>
+					<td>It’s super bad we need to pay extra attention</td>
+					<td>Review required</td>
+				</tr>
+				<tr>
+					<td>1-2</td>
+					<td>Slightly under expectations</td>
+					<td>None</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Expected performance</td>
+					<td>Base benefit</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Surpass performance</td>
+					<td>High tier benefit</td>
+				</tr>
+				<tr>
+					<td>5+</td>
+					<td>Outgrown position</td>
+					<td>Reason for review and probably promotion</td>
+				</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<p>Outcome of Continuous Review:</p>
+			<ul>
+				<li>Measurable Step by Step Review</li>
+				<li>Fast feedback</li>
+				<li>Tooling for manager to give feedback by cycle results</li>
+				<li>Logic of review became more transparent</li>
+				<li>Less pain with annual review</li>
+				<li>Same promotions as before but more agile and dynamic</li>
+				<li>Better vision of performance changes</li>
+			</ul>
+		</section>
+		<section>
+			<img alt="splash" src="img/ty.png">
+		</section>
+	</div>
+</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    Reveal.initialize({hash: true});
+</script>
+</body>
 </html>
